@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JL-Sports</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    .navbar {
+      background-color: #5d98bf;
+    }
+    section {
+      padding: 2rem 1.5rem;
+    }
+    /* Estilo para la navegación */
+    .navbar {
+      background-color: #00d1b2;
+    }
+    /* Estilo para las secciones */
+    section {
+      padding: 2rem 1.5rem;
+    }
+    /* Estilo para los botones */
+    .button.is-primary {
+      background-color: #00d1b2;
+      border-color: #00d1b2;
+    }
+    .button.is-primary:hover {
+      background-color: #00c4a7;
+      border-color: #00c4a7;
+    }
+    /* Estilo para los inputs */
+    .input,
+    .textarea {
+      border-color: #dbdbdb;
+    }
+    .input:focus,
+    .textarea:focus {
+      border-color: #00d1b2;
+      box-shadow: 0 0 0.5em rgba(0, 209, 178, 0.25);
+    }
+    /* Animación para los elementos del menú */
+    .navbar-item {
+      position: relative;
+      transition: color 0.3s ease, background-color 0.3s ease;
+    }
+    .navbar-item:hover {
+      background-color: #00c4a7;
+      color: #fff;
+    }
+    .navbar-item::after {
+      content: '';
+      position: absolute;
+      bottom: 5px;
+      left: 50%;
+      width: 6px;
+      height: 6px;
+      background-color: #fff;
+      border-radius: 50%;
+      opacity: 0;
+      transform: translateX(-50%) scale(0.5);
+      transition: opacity 0.3s ease, transform 0.3s ease;
+    }
+    .navbar-item:hover::after {
+      opacity: 1;
+      transform: translateX(-50%) scale(1);
+    }
+    /* Estilos personalizados */
+    #inicio {
+      background-image: url('background.jpg');
+      background-size: cover;
+      background-position: center;
+      color: #fff;
+      text-align: center;
+      padding: 5rem 1.5rem;
+    }
+    #inicio .title {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+    #inicio .subtitle {
+      font-size: 1.25rem;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    #sobre-nosotros {
+      background-color: #f5f5f5;
+      color: #333;
+    }
+    #sobre-nosotros .title {
+      color: #000000;
+    }
+    #sobre-nosotros .content {
+      font-size: 1.1rem;
+      line-height: 1.6;
+    }
+    
+  </style>
+</head>
+
+<body>
+
+  <!-- Menú de navegación -->
+  <nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="#inicio">
+        <img src="https://tse2.mm.bing.net/th/id/OIG1.zdA0l5.Kb7oTdiUFSldu?pid=ImgGn" alt="JL-Sports Logo" width="30" height="30"> 
+      </a>
+      <h1></h1>
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasic">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+
+    <div id="navbarBasic" class="navbar-menu">
+      <div class="navbar-start">
+        <p class="navbar-item"><strong>JL-Sports</strong></p>
+        <a class="navbar-item" href="#inicio">Inicio</a>
+        <a class="navbar-item" href="#sobre-nosotros">Sobre nosotros</a>
+        <a class="navbar-item" href="#servicios">Servicios</a>
+        <a class="navbar-item" href="#contacto">Contacto</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Sección Inicio -->
+  <section id="inicio" class="section">
+    <div class="container">
+      <h1 class="title">Bienvenidos a nuestra empresa</h1>
+      <p class="subtitle">Bienvenido a JL-Sports, tu tienda online para todo lo relacionado con el mundo del deporte. 
+        En JL-Sports,estamos orgullosos de ofrecer una variedad tan grande de productos de gran calidad que satisfacen las necesidades de todos los deportistas.
+        Nuestra plataforma online está diseñada para brindarte una experiencia de compra conveniente y sin complicaciones, con la facilidad de realizar pedidos desde la comodidad de tu hogar y recibir tus productos directamente en tu puerta.
+      </p>
+    </div>
+  </section>
+
+  <!-- Sección Sobre Nosotros -->
+  <section id="sobre-nosotros" class="section">
+    <div class="container" style="text-align: center;">
+      <h2 class="title">Sobre Nosotros</h2>
+      <p class="content" style="text-align: justify;">Bienvenidos a JL-Sports, tu destino en línea para todas tus necesidades deportivas. En JL-Sports, estamos encantados de  ofrecerte más que solo productos deportivos; queremos compartir nuestra pasión por el deporte contigo.
+        Desde nuestros humildes comienzos, hemos crecido hasta convertirnos en una referencia confiable en la comunidad deportiva en línea. Nuestro viaje está marcado por la dedicación hacia nuestros clientes y la búsqueda constante de los productos más nuevos del mercado.
+        En JL-Sports, nos comprometemos a ofrecerte productos de la más alta calidad, seleccionados cuidadosamente para satisfacer tus necesidades deportivas. Nos esforzamos por promover la venta de los productos de mejor calidad al mejor precio por el bienestar de los clientes, también fomentamos la actividad física y el equilibrio en la vida diaria.
+        Nuestra misión es proporcionar una experiencia de compra en línea excepcional, donde la comodidad se combina con la calidad y la atención personalizada. Queremos ser tu compañero confiable en tu viaje hacia un estilo de vida más saludable y activo.
+        En JL-Sports, no solo vendemos productos; construimos relaciones, fomentamos la comunidad y promovemos un estilo de vida activo y saludable. Únete a nosotros en esta emocionante aventura y descubre todo lo que tenemos para ofrecerte.
+        </p><br>
+    </div>
+    <div class="container">
+      <div class="content" style="text-align: justify;">
+        <p>Nuestra misión es democratizar el acceso a productos deportivos de alta calidad y promover un estilo de vida activo y saludable. Buscamos ser la tienda en línea de referencia para todos los deportistas, ofreciendo una experiencia de compra excepcional y un catálogo de productos que inspire y motive a las personas a alcanzar sus metas deportivas.</p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Sección Servicios -->
+  <section class="section" id="servicios">
+    <div class="container">
+      <h3 class="title has-text-centered">Servicios</h3>
+      <div class="columns is-multiline">
+        <div class="column is-one-third">
+          <div class="box">
+            <h4 class="title is-4">Amplia Gama de Productos</h4>
+            <p>Equipamiento deportivo, ropa y calzado, accesorios y suplementos para todas las disciplinas.</p>
+          </div>
+        </div>
+        <div class="column is-one-third">
+          <div class="box">
+            <h4 class="title is-4">Calidad y Variedad</h4>
+            <p>Productos de las mejores marcas del mercado para diferentes presupuestos sin comprometer la calidad.</p>
+          </div>
+        </div>
+        <div class="column is-one-third">
+          <div class="box">
+            <h4 class="title is-4">Experiencia de Compra en Línea</h4>
+            <p>Sitio web intuitivo y seguro con filtros y búsqueda avanzada para facilitar tu compra.</p>
+          </div>
+        </div>
+        <div class="column is-one-third">
+          <div class="box">
+            <h4 class="title is-4">Envío Rápido y Confiable</h4>
+            <p>Envíos nacionales e internacionales con opciones adaptadas a tus necesidades.</p>
+          </div>
+        </div>
+        <div class="column is-one-third">
+          <div class="box">
+            <h4 class="title is-4">Atención al Cliente Excepcional</h4>
+            <p>Soporte personalizado y política de devoluciones sencilla para tu satisfacción.</p>
+          </div>
+        </div>
+        <div class="column is-one-third">
+          <div class="box">
+            <h4 class="title is-4">Promociones y Programas de Fidelización</h4>
+            <p>Descuentos, ofertas especiales y programa de recompensas para nuestros clientes frecuentes.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contacto" class="section">
+    <div class="container">
+      <h2 class="title">Contacto</h2>
+      <form id="contactForm">
+        <div class="field">
+          <label class="label">Nombre</label>
+          <div class="control">
+            <input class="input" type="text" id="nom" placeholder="Tu nombre">
+          </div>
+        </div>
+        <div class="field">
+          <label class="label">Correo Electrónico</label>
+          <div class="control">
+            <input class="input" type="email" id="email" placeholder="Tu correo electrónico">
+          </div>
+        </div>
+        <div class="field">
+          <label class="label">Mensaje</label>
+          <div class="control">
+            <textarea class="textarea" id="missatge" placeholder="Escribe el mensaje"></textarea>
+          </div>
+        </div>
+        <div class="control">
+          <button class="button is-primary" type="submit">Enviar</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <script>
+    // Validación del formulario
+    document.getElementById('contactForm').addEventListener('submit', function(event) {
+      event.preventDefault();
+      var nom = document.getElementById('nom').value;
+      var email = document.getElementById('email').value;
+      var missatge = document.getElementById('missatge').value;
+      var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+      if (!nom || !email || !missatge) {
+        alert('Todos los campos son obligatorios.');
+        return;
+      }
+
+      if (!emailRegex.test(email)) {
+        alert('Introduce un correo electrónico válido.');
+        return;
+      }
+
+      alert('Enviado correctamente');
+    });
+  </script>
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    // Obtiene todos los elementos de "navbar-burger"
+    const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+    // Comprueba si hay al menos un "navbar-burger"
+    if ($navbarBurgers.length > 0) {
+      // Añade un evento de clic a cada uno de ellos
+      $navbarBurgers.forEach(el => {
+        el.addEventListener('click', () => {
+          // Obtiene el objetivo del "navbar-burger"
+          const target = el.dataset.target;
+          const $target = document.getElementById(target);
+
+          // Alterna la clase "is-active" en el "navbar-burger" y el "navbar-menu"
+          el.classList.toggle('is-active');
+          $target.classList.toggle('is-active');
+        });
+      });
+    }
+  });
+</script>
+
+</body>
+</html>
